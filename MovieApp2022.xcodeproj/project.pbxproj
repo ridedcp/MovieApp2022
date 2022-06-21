@@ -10,12 +10,8 @@
 		28A7CE4528622260002473AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4428622260002473AE /* AppDelegate.swift */; };
 		28A7CE4728622260002473AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4628622260002473AE /* SceneDelegate.swift */; };
 		28A7CE4928622260002473AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4828622260002473AE /* ViewController.swift */; };
-		28A7CE4C28622260002473AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A7CE4A28622260002473AE /* Main.storyboard */; };
 		28A7CE4E28622265002473AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A7CE4D28622265002473AE /* Assets.xcassets */; };
 		28A7CE5128622265002473AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A7CE4F28622265002473AE /* LaunchScreen.storyboard */; };
-		28A7CE5C28622266002473AE /* MovieApp2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE5B28622266002473AE /* MovieApp2022Tests.swift */; };
-		28A7CE6628622266002473AE /* MovieApp2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE6528622266002473AE /* MovieApp2022UITests.swift */; };
-		28A7CE6828622266002473AE /* MovieApp2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE6728622266002473AE /* MovieApp2022UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +36,12 @@
 		28A7CE4428622260002473AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A7CE4628622260002473AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28A7CE4828622260002473AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28A7CE4B28622260002473AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28A7CE4D28622265002473AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A7CE5028622265002473AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A7CE5228622265002473AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28A7CE5728622266002473AE /* MovieApp2022Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieApp2022Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28A7CE5B28622266002473AE /* MovieApp2022Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp2022Tests.swift; sourceTree = "<group>"; };
 		28A7CE6128622266002473AE /* MovieApp2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieApp2022UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28A7CE6528622266002473AE /* MovieApp2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp2022UITests.swift; sourceTree = "<group>"; };
-		28A7CE6728622266002473AE /* MovieApp2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28A7CE78286229D0002473AE /* MovieAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MovieAppPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +72,8 @@
 		28A7CE3828622260002473AE = {
 			isa = PBXGroup;
 			children = (
+				28A7CE78286229D0002473AE /* MovieAppPackage */,
 				28A7CE4328622260002473AE /* MovieApp2022 */,
-				28A7CE5A28622266002473AE /* MovieApp2022Tests */,
-				28A7CE6428622266002473AE /* MovieApp2022UITests */,
 				28A7CE4228622260002473AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,29 +94,11 @@
 				28A7CE4428622260002473AE /* AppDelegate.swift */,
 				28A7CE4628622260002473AE /* SceneDelegate.swift */,
 				28A7CE4828622260002473AE /* ViewController.swift */,
-				28A7CE4A28622260002473AE /* Main.storyboard */,
 				28A7CE4D28622265002473AE /* Assets.xcassets */,
 				28A7CE4F28622265002473AE /* LaunchScreen.storyboard */,
 				28A7CE5228622265002473AE /* Info.plist */,
 			);
 			path = MovieApp2022;
-			sourceTree = "<group>";
-		};
-		28A7CE5A28622266002473AE /* MovieApp2022Tests */ = {
-			isa = PBXGroup;
-			children = (
-				28A7CE5B28622266002473AE /* MovieApp2022Tests.swift */,
-			);
-			path = MovieApp2022Tests;
-			sourceTree = "<group>";
-		};
-		28A7CE6428622266002473AE /* MovieApp2022UITests */ = {
-			isa = PBXGroup;
-			children = (
-				28A7CE6528622266002473AE /* MovieApp2022UITests.swift */,
-				28A7CE6728622266002473AE /* MovieApp2022UITestsLaunchTests.swift */,
-			);
-			path = MovieApp2022UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +207,6 @@
 			files = (
 				28A7CE5128622265002473AE /* LaunchScreen.storyboard in Resources */,
 				28A7CE4E28622265002473AE /* Assets.xcassets in Resources */,
-				28A7CE4C28622260002473AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A7CE5C28622266002473AE /* MovieApp2022Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A7CE6628622266002473AE /* MovieApp2022UITests.swift in Sources */,
-				28A7CE6828622266002473AE /* MovieApp2022UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +267,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28A7CE4A28622260002473AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28A7CE4B28622260002473AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28A7CE4F28622265002473AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +405,6 @@
 				INFOPLIST_FILE = MovieApp2022/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +431,6 @@
 				INFOPLIST_FILE = MovieApp2022/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
