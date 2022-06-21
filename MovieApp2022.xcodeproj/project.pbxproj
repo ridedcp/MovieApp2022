@@ -9,8 +9,14 @@
 /* Begin PBXBuildFile section */
 		28A7CE4528622260002473AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4428622260002473AE /* AppDelegate.swift */; };
 		28A7CE4728622260002473AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4628622260002473AE /* SceneDelegate.swift */; };
-		28A7CE4928622260002473AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4828622260002473AE /* ViewController.swift */; };
+		28A7CE4928622260002473AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4828622260002473AE /* HomeViewController.swift */; };
 		28DB1CEE286244E5000C6682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A7CE4D28622265002473AE /* Assets.xcassets */; };
+		28DB1CF028624688000C6682 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB1CEF28624688000C6682 /* HomeViewModel.swift */; };
+		28DB1CF2286246CF000C6682 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB1CF1286246CF000C6682 /* HomeAssembly.swift */; };
+		28DB1CF428624AFA000C6682 /* FeatureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB1CF328624AFA000C6682 /* FeatureAssembly.swift */; };
+		28DB1CF728624B58000C6682 /* FeatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB1CF628624B57000C6682 /* FeatureProvider.swift */; };
+		28DB1CF928625006000C6682 /* HomeViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB1CF828625006000C6682 /* HomeViewController+Layout.swift */; };
+		28DB1CFB28625135000C6682 /* HomeViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DB1CFA28625135000C6682 /* HomeViewController+ViewModel.swift */; };
 		28DFD91E2862383800663F38 /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DFD91D2862383800663F38 /* UseCaseAssembly.swift */; };
 		28DFD9212862388100663F38 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 28DFD9202862388100663F38 /* Data */; };
 		28DFD9232862388100663F38 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 28DFD9222862388100663F38 /* Domain */; };
@@ -38,13 +44,19 @@
 		28A7CE4128622260002473AE /* MovieApp2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A7CE4428622260002473AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A7CE4628622260002473AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28A7CE4828622260002473AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28A7CE4828622260002473AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		28A7CE4D28622265002473AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A7CE5028622265002473AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A7CE5728622266002473AE /* MovieApp2022Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieApp2022Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A7CE6128622266002473AE /* MovieApp2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieApp2022UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A7CE78286229D0002473AE /* MovieAppPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MovieAppPackage; sourceTree = "<group>"; };
 		28DB1CEB286243AD000C6682 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DB1CEF28624688000C6682 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		28DB1CF1286246CF000C6682 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		28DB1CF328624AFA000C6682 /* FeatureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAssembly.swift; sourceTree = "<group>"; };
+		28DB1CF628624B57000C6682 /* FeatureProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureProvider.swift; sourceTree = "<group>"; };
+		28DB1CF828625006000C6682 /* HomeViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Layout.swift"; sourceTree = "<group>"; };
+		28DB1CFA28625135000C6682 /* HomeViewController+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+ViewModel.swift"; sourceTree = "<group>"; };
 		28DFD91D2862383800663F38 /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		28DFD924286238B700663F38 /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,9 +129,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		28DB1CF528624B4A000C6682 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				28DB1CF628624B57000C6682 /* FeatureProvider.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		28DFD9142862372900663F38 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				28DB1CF528624B4A000C6682 /* Common */,
 				28DFD9172862377500663F38 /* Modules */,
 			);
 			path = Presentation;
@@ -139,6 +160,7 @@
 			children = (
 				28DFD91D2862383800663F38 /* UseCaseAssembly.swift */,
 				28DFD924286238B700663F38 /* RepositoryAssembly.swift */,
+				28DB1CF328624AFA000C6682 /* FeatureAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -164,6 +186,7 @@
 		28DFD91A286237AF00663F38 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				28DB1CEF28624688000C6682 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -171,7 +194,9 @@
 		28DFD91B286237B800663F38 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				28A7CE4828622260002473AE /* ViewController.swift */,
+				28A7CE4828622260002473AE /* HomeViewController.swift */,
+				28DB1CF828625006000C6682 /* HomeViewController+Layout.swift */,
+				28DB1CFA28625135000C6682 /* HomeViewController+ViewModel.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -179,6 +204,7 @@
 		28DFD91C286237CE00663F38 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				28DB1CF1286246CF000C6682 /* HomeAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -323,11 +349,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A7CE4928622260002473AE /* ViewController.swift in Sources */,
+				28A7CE4928622260002473AE /* HomeViewController.swift in Sources */,
+				28DB1CFB28625135000C6682 /* HomeViewController+ViewModel.swift in Sources */,
+				28DB1CF028624688000C6682 /* HomeViewModel.swift in Sources */,
 				28DFD91E2862383800663F38 /* UseCaseAssembly.swift in Sources */,
+				28DB1CF928625006000C6682 /* HomeViewController+Layout.swift in Sources */,
+				28DB1CF728624B58000C6682 /* FeatureProvider.swift in Sources */,
 				28A7CE4528622260002473AE /* AppDelegate.swift in Sources */,
+				28DB1CF428624AFA000C6682 /* FeatureAssembly.swift in Sources */,
 				28A7CE4728622260002473AE /* SceneDelegate.swift in Sources */,
 				28DFD925286238B700663F38 /* RepositoryAssembly.swift in Sources */,
+				28DB1CF2286246CF000C6682 /* HomeAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
