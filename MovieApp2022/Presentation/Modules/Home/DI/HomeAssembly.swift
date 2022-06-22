@@ -10,21 +10,21 @@ import Domain
 
 public class HomeAssembly {
     
-    private let navigationController: UINavigationController
     private let getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>
     
-    public init(navigationController: UINavigationController,
-                getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>) {
-        self.navigationController = navigationController
+    public init(getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>) {
         self.getShowsUseCase = getShowsUseCase
     }
     
     public func build() -> UIViewController {
-        return HomeViewController(viewModel: makeViewModel())
+        return HomeViewController(viewModel: makeViewModel(), router: makeRouter())
     }
     
     public func makeViewModel() -> HomeViewModel {
-        return HomeViewModel(navigationController: navigationController,
-                             getShowsUseCase: getShowsUseCase)
+        return HomeViewModel(getShowsUseCase: getShowsUseCase)
+    }
+    
+    public func makeRouter() -> HomeRouter {
+        return HomeRouter()
     }
 }

@@ -9,12 +9,11 @@ import Domain
 import UIKit.UINavigationController
 
 public class HomeViewModel {
-    let navigationController: UINavigationController
     let getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>
     
-    public init(navigationController: UINavigationController,
-         getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>) {
-        self.navigationController = navigationController
+    @Observable var collectionObservable: Resource<[Show]>? = .none
+    
+    public init(getShowsUseCase: QueryCallableUseCase<[Show], GetShowsUseCaseParams>) {
         self.getShowsUseCase = getShowsUseCase
     }
     
@@ -23,9 +22,9 @@ public class HomeViewModel {
         getShowsUseCase.execute(params: params) { result in
             switch result {
             case .success(let shows):
-                print(shows)
+                self.collectionObservable = .success(shows)
             case .failure(let error):
-                print(error)
+                self.collectionObservable = .failure(error.localizedDescription)
             }
         }
     }

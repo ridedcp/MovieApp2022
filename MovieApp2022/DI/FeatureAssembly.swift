@@ -11,9 +11,12 @@ import Domain
 
 public class FeatureAssembly {
     
-    public static let homeFeature: FeatureProvider = { navigationController in
+    public static let homeFeature: ViewControllerProvider = {
         let useCase = GetShowsUseCase(repository: RepositoryAssembly.makeRepository())
-        return HomeAssembly(navigationController: navigationController, getShowsUseCase: useCase).build()
+        return HomeAssembly(getShowsUseCase: useCase).build()
     }
     
+    public static let detailFeature: SingleParamFeatureProvider<Show> = { navigationController, show in
+        return DetailAssembly(navigationController: navigationController, show: show).build()
+    }
 }

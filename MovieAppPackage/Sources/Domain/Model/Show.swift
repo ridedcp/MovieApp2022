@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct Show: Codable, Identifiable {
+public struct Show: Equatable {
+
     public var id: Int
     public var name: String
     public var image: ShowImage
@@ -19,7 +20,7 @@ public struct Show: Codable, Identifiable {
     }
 }
 
-public struct ShowImage: Codable {
+public struct ShowImage: Equatable {
     public var medium: String
     public var original: String
     

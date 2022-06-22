@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "35E87A2B-574F-43CD-8F54-640DB155A3BD"
+            uuid = "7E9D510B-3077-4AA8-A8B2-F4C359FF5C99"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieApp2022/Presentation/Modules/Home/ViewModel/HomeViewModel.swift"
+            filePath = "MovieApp2022/Presentation/Modules/Home/Router/HomeRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "getShows()"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "navigateToDetailView(show:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C6221DF1-623E-4FF2-B389-E401D3496CA9"
+            uuid = "16D9028A-EB0B-4EA1-8D9F-A72B6140F291"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieApp2022/Presentation/Modules/Home/ViewModel/HomeViewModel.swift"
+            filePath = "MovieApp2022/App/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "getShows()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "scene(_:willConnectTo:options:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
