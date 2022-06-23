@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Series List"
         bindingViewModel()
         viewModel.getShows()
         setupLayout()
@@ -51,6 +52,10 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let navigation = self.navigationController else { return }
         router.navigateToDetailView(navigation: navigation, show: data![indexPath.row])
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return Style.Spacing.spacingL
     }
 }
 

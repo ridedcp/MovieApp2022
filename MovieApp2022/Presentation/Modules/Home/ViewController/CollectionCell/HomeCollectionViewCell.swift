@@ -7,7 +7,6 @@
 
 import UIKit
 import Domain
-//import Kingfisher
 
 final class HomeCollectionViewCell: UICollectionViewCell {
     
@@ -18,6 +17,10 @@ final class HomeCollectionViewCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
         image.translatesAutoresizingMaskIntoConstraints = false
+        image.layer.borderColor = CGColor(red: 255, green: 255, blue: 255, alpha: 1)
+        image.layer.borderWidth = 1
+        image.layer.masksToBounds = true
+        image.layer.cornerRadius = 10
         return image
     }()
 
@@ -27,6 +30,7 @@ final class HomeCollectionViewCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
 
@@ -46,23 +50,20 @@ final class HomeCollectionViewCell: UICollectionViewCell {
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-//            showImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Style.Spacing.spacingS),
-//            showImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Style.Spacing.spacingS),
-//            showImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-//            showImageView.heightAnchor.constraint(equalToConstant: 40),
-//            showImageView.widthAnchor.constraint(equalToConstant: 40),
+            showImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Style.Spacing.spacingS),
+            showImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Style.Spacing.spacingS),
+            showImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            showImageView.bottomAnchor.constraint(equalTo: showTitleLabel.topAnchor, constant: -Style.Spacing.spacingS),
 
             showTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             showTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            showTitleLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
             showTitleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            
         ])
     }
 
     func configCell(with show: Show) {
         showTitleLabel.text = show.name
-        //showImageView.kf.setImage(with: show.image.medium)
+        showImageView.loadImage(url: show.image.medium)
     }
 
     override func prepareForReuse() {

@@ -12,8 +12,8 @@ extension HomeViewController {
     
     func setupLayout() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: view.frame.width, height: 50)
+        layout.sectionInset = UIEdgeInsets(top: Style.Spacing.spacingM, left: Style.Spacing.spacingS, bottom: Style.Spacing.spacingM, right: Style.Spacing.spacingS)
+        layout.itemSize = CGSize(width: 180, height: 220)
         collectionview = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
     }
 
@@ -28,8 +28,8 @@ extension HomeViewController {
     
     func setupConstraints(){
         NSLayoutConstraint.activate([
-            collectionview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            collectionview.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50),
+            collectionview.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionview.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionview.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
             collectionview.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 50)
         ])

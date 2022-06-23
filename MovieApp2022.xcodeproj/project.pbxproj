@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28891F7D2864B28E005BE15F /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28891F7C2864B28E005BE15F /* UIImageView+extensions.swift */; };
 		28A7CE4528622260002473AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4428622260002473AE /* AppDelegate.swift */; };
 		28A7CE4728622260002473AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4628622260002473AE /* SceneDelegate.swift */; };
 		28A7CE4928622260002473AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7CE4828622260002473AE /* HomeViewController.swift */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28891F7C2864B28E005BE15F /* UIImageView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
+		289B34C52864863000C8AD72 /* Kingfisher */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Kingfisher; path = "../Library/Developer/Xcode/DerivedData/MovieApp2022-ekledvmqrtuxbucvshcbbrkrehlg/SourcePackages/checkouts/Kingfisher"; sourceTree = "<group>"; };
 		28A7CE4128622260002473AE /* MovieApp2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A7CE4428622260002473AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28A7CE4628622260002473AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +156,7 @@
 				28DB1CF628624B57000C6682 /* FeatureProvider.swift */,
 				28DB1CFF286350EA000C6682 /* Style.swift */,
 				28DB1D012863514E000C6682 /* UIView+Extensions.swift */,
+				28891F7C2864B28E005BE15F /* UIImageView+extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -276,6 +280,7 @@
 		28DFD91F2862388100663F38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				289B34C52864863000C8AD72 /* Kingfisher */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				28DB1D00286350EA000C6682 /* Style.swift in Sources */,
 				28DB1CF728624B58000C6682 /* FeatureProvider.swift in Sources */,
 				28A7CE4528622260002473AE /* AppDelegate.swift in Sources */,
+				28891F7D2864B28E005BE15F /* UIImageView+extensions.swift in Sources */,
 				28DB1CF428624AFA000C6682 /* FeatureAssembly.swift in Sources */,
 				28A7CE4728622260002473AE /* SceneDelegate.swift in Sources */,
 				28DFD925286238B700663F38 /* RepositoryAssembly.swift in Sources */,
@@ -605,6 +611,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -631,6 +638,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
