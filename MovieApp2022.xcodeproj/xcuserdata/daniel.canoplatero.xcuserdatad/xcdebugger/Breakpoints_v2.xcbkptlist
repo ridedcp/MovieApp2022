@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "16D9028A-EB0B-4EA1-8D9F-A72B6140F291"
+            uuid = "AE246C57-1250-42AC-80FA-3719B2291087"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieApp2022/App/SceneDelegate.swift"
+            filePath = "MovieApp2022/Presentation/Modules/Home/ViewController/HomeViewController+ViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "scene(_:willConnectTo:options:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "bindCollectionCompleted()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

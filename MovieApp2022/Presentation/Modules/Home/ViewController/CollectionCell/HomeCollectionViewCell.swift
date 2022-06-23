@@ -12,63 +12,59 @@ import Domain
 final class HomeCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "HomeCollectionViewCell"
-    
+
     private let showImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
+        image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
-    
-    private let stackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
-        stackView.alignment = .leading
-        return stackView
-    }()
-    
+
     private let showTitleLabel: UILabel = {
         let label = UILabel()
         label.font = Style.Fonts.titleFont
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+        label.textAlignment = .center
         return label
     }()
-     
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
         setupConstraints()
     }
     
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-        
+
     private func setupView() {
-        contentView.addAutolayoutView([showImageView, stackView])
-        stackView.addArrangedSubview(showTitleLabel)
+        contentView.addAutolayoutView([showImageView, showTitleLabel])
     }
-    
+
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            showImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Style.Spacing.spacingS),
-            showImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Style.Spacing.spacingS),
-            showImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            showImageView.heightAnchor.constraint(equalToConstant: 40),
-            showImageView.widthAnchor.constraint(equalToConstant: 40),
+//            showImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Style.Spacing.spacingS),
+//            showImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Style.Spacing.spacingS),
+//            showImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+//            showImageView.heightAnchor.constraint(equalToConstant: 40),
+//            showImageView.widthAnchor.constraint(equalToConstant: 40),
+
+            showTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            showTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            showTitleLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
+            showTitleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            stackView.centerYAnchor.constraint(equalTo: showImageView.centerYAnchor),
-            stackView.leadingAnchor.constraint(equalTo: showImageView.trailingAnchor, constant: Style.Spacing.spacingM),
-            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Style.Spacing.spacingL),
         ])
     }
-    
+
     func configCell(with show: Show) {
         showTitleLabel.text = show.name
         //showImageView.kf.setImage(with: show.image.medium)
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         showTitleLabel.text = ""

@@ -11,21 +11,27 @@ import UIKit
 extension HomeViewController {
     
     func setupLayout() {
-        view.backgroundColor = .white
-        view.addSubview(collectionView)
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: view.frame.width, height: 50)
+        collectionview = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+    }
+
+    func setupCollectionView() {
+        collectionview.dataSource = self
+        collectionview.delegate = self
+        collectionview.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
+        collectionview.showsVerticalScrollIndicator = false
+        collectionview.backgroundColor = .white
+        self.view.addSubview(collectionview)
     }
     
     func setupConstraints(){
         NSLayoutConstraint.activate([
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            collectionview.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            collectionview.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 50),
+            collectionview.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            collectionview.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 50)
         ])
     }
-    
-    func setupCollectionView() {
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: "HomeCollectionViewCell")
-    }
-    
 }

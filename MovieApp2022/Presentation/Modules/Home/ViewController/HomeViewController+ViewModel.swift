@@ -23,6 +23,9 @@ extension HomeViewController {
                 print("Loading")
             case .success(let collection):
                 self?.data = collection
+                DispatchQueue.main.async {
+                    self?.collectionview.reloadData()
+                }
             case .failure:
                 print("failure")
             }
