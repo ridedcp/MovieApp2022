@@ -26,7 +26,7 @@ final class HomeCollectionViewCell: UICollectionViewCell {
 
     private let showTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = Style.Fonts.titleFont
+        label.font = Style.Fonts.subtitleFont
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.textAlignment = .center
